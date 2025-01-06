@@ -1,25 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Simple Button</title>
-  <style>
-    button {
-      background-color: #4CAF50; /* Green */
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effortless Eats</title>
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff7f50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff4500;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff7f50;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .recipe {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .recipe h2 {
+            margin-top: 0;
+            color: #ff4500;
+        }
+
+        .recipe p {
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ff7f50;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Effortless Eats</h1>
+        <p>Simple recipes for delicious meals</p>
+    </header>
 
-  <button>Click Me</button>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Recipes</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
 
+    <div class="container">
+        <div class="recipe">
+            <img src="https://via.placeholder.com/1200x800" alt="Recipe Image">
+            <h2>Easy Pasta Primavera</h2>
+            <p>This light and fresh pasta dish comes together in under 30 minutes, making it perfect for a weeknight meal.</p>
+        </div>
+
+        <div class="recipe">
+            <img src="https://via.placeholder.com/1200x800" alt="Recipe Image">
+            <h2>One-Pan Lemon Herb Chicken</h2>
+            <p>A flavorful and healthy dinner with minimal cleanup. Perfect for busy evenings!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Effortless Eats | Made with love for food enthusiasts</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
 </body>
 </html>
