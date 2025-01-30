@@ -10,80 +10,106 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-color: #f8f8f8;
+            background-color: #f4f4f4;
             color: #333;
         }
 
         header {
-            background-color: #ff7f50;
+            background: linear-gradient(90deg, #ff7f50, #ff4500);
             color: white;
             padding: 20px 10px;
             text-align: center;
+            font-weight: bold;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
         }
 
         nav {
             display: flex;
             justify-content: center;
             background-color: #ff4500;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 12px 25px;
             font-size: 1.2rem;
-            transition: background-color 0.3s;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+            border-radius: 5px;
         }
 
         nav a:hover {
             background-color: #ff7f50;
+            transform: scale(1.1);
         }
 
         .container {
             max-width: 1200px;
-            margin: 20px auto;
+            margin: 30px auto;
             padding: 0 20px;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 2.5rem;
+            color: #ff4500;
+            margin-bottom: 20px;
+            text-transform: uppercase;
         }
 
         .recipe {
             background: white;
             margin: 20px 0;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .recipe:hover {
+            transform: scale(1.02);
         }
 
         .recipe img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
+            border-radius: 12px;
         }
 
         .recipe h2 {
-            margin-top: 0;
+            margin-top: 15px;
             color: #ff4500;
+            font-size: 1.8rem;
         }
 
         .recipe p {
-            margin: 10px 0;
+            font-size: 1.1rem;
+            color: #555;
         }
 
         footer {
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
             background-color: #333;
             color: white;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         footer a {
             color: #ff7f50;
             text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -100,13 +126,16 @@
     </nav>
 
     <div class="container">
+        
         <div class="recipe">
+          <h2>Effortless Eats Restaurant</h2>
             <img src="https://via.placeholder.com/1200x800" alt="Recipe Image">
             <h2>Easy Pasta Primavera</h2>
             <p>This light and fresh pasta dish comes together in under 30 minutes, making it perfect for a weeknight meal.</p>
         </div>
 
         <div class="recipe">
+          <h2>Effortless Eats Restaurant</h2>
             <img src="https://via.placeholder.com/1200x800" alt="Recipe Image">
             <h2>One-Pan Lemon Herb Chicken</h2>
             <p>A flavorful and healthy dinner with minimal cleanup. Perfect for busy evenings!</p>
